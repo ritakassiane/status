@@ -12,8 +12,6 @@ export function Footer() {
             style={{ objectFit: "contain" }}
           />
         </div>
-        <div className="h-10 w-32 bg-gray-800 rounded opacity-80 flex items-center justify-center text-xs text-gray-400">
-        </div>
       </div>
       <p className="text-gray-400 text-xs text-center">
         Plataforma inteligente desenvolvida pela Erde para Bring Marketing
