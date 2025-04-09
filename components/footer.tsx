@@ -13,7 +13,6 @@ export function Footer() {
           />
         </div>
         <div className="h-10 w-32 bg-gray-800 rounded opacity-80 flex items-center justify-center text-xs text-gray-400">
-          logo-cliente.svg
         </div>
       </div>
       <p className="text-gray-400 text-xs text-center">
