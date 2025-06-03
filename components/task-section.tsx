@@ -12,6 +12,7 @@ type Task = {
   status: "to do" | "in progress" | "dependente" | "complete";
   completedDate?: string;
   created_at?: string;
+  previsao?: string;
 };
 
 export function TaskSection() {
@@ -110,21 +111,35 @@ export function TaskSection() {
 
                   <div className="space-y-3 mb-6">
                     <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-5 h-5 border border-gray-500 rounded mt-0.5"></div>
+                      <div className="flex-shrink-0 w-5 h-5 border border-gray-500 rounded mt-0.5 flex items-center justify-center text-[#00FF87]">
+                        ✓
+                      </div>
                       <span className="text-gray-300">
                         Briefing Bot Mirela: Extração de dados sobre o Bot de Mirela
                       </span>
                     </div>
                     <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-5 h-5 border border-gray-500 rounded mt-0.5"></div>
+                      <div className="flex-shrink-0 w-5 h-5 border border-gray-500 rounded mt-0.5 flex items-center justify-center text-[#00FF87]">
+                        ✓
+                      </div>
                       <span className="text-gray-300">
                         Criação e testes da Identidade do bot de Mirela (sem funções)
                       </span>
                     </div>
                     <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-5 h-5 border border-gray-500 rounded mt-0.5"></div>
+                      <div className="flex-shrink-0 w-5 h-5 border border-gray-500 rounded mt-0.5 flex items-center justify-center text-[#00FF87]">
+                        ✓
+                      </div>
                       <span className="text-gray-300">
                         Integração e testes de identidade + funções
+                      </span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="flex-shrink-0 w-5 h-5 border border-gray-500 rounded mt-0.5 flex items-center justify-center">
+                        🟠
+                      </div>
+                      <span className="text-gray-300">
+                        TASK BÔNUS: Plataforma para que Mirela seja capaz de visualizar payments
                       </span>
                     </div>
                   </div>
@@ -290,6 +305,7 @@ export function TaskSection() {
                 </span>
               </div>
               {task.completedDate && <p className="text-xs text-gray-400 mt-2">Concluído em: {task.completedDate}</p>}
+              {task.previsao && <p className="text-xs text-gray-400 mt-2">Previsão: {task.previsao}</p>}
             </div>
           ))}
         </div>
