@@ -16,7 +16,7 @@ export default function CronogramaPage() {
         <div className="container flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <Image
-              src="https://erdeenterprise.com/wp-content/uploads/2023/10/Logo-3.png.webp"
+              src="https://erdeenterprise.com/wp-content/uploads/2025/05/Logo-c-Icone-Verde.svg"
               alt="Erde Logo"
               width={120}
               height={40}
