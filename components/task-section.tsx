@@ -135,8 +135,8 @@ export function TaskSection() {
                       </span>
                     </div>
                     <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-5 h-5 border border-gray-500 rounded mt-0.5 flex items-center justify-center">
-                        🟠
+                      <div className="flex-shrink-0 w-5 h-5 border border-gray-500 rounded mt-0.5 flex items-center justify-center text-[#00FF87]">
+                        ✓
                       </div>
                       <span className="text-gray-300">
                         TASK BÔNUS: Plataforma para que Mirela seja capaz de visualizar payments
@@ -166,20 +166,25 @@ export function TaskSection() {
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="flex-shrink-0 w-5 h-5 border border-gray-500 rounded mt-0.5"></div>
-                      <span className="text-gray-300">
-                        [Visão da Agência] Desenvolvimento e integração da plataforma
-                      </span>
+                      <span className="text-gray-300">Bot Mirella com API Oficial</span>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="flex-shrink-0 w-5 h-5 border border-gray-500 rounded mt-0.5"></div>
-                      <span className="text-gray-300">Integração de funcionalidades para follow ups</span>
+                      <span className="text-gray-300">Bot Imob com API Oficial</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="flex-shrink-0 w-5 h-5 border border-gray-500 rounded mt-0.5"></div>
+                      <span className="text-gray-300">Visualização em chat do Bot Imob e Bot Mirella</span>
                     </div>
                   </div>
 
                   <div className="bg-[#222] p-4 rounded-lg">
                     <h4 className="text-white font-medium mb-2">O que esse Step entrega?</h4>
                     <p className="text-gray-300">
-                      Plataforma funcional para VISÃO AGÊNCIA e VISÃO CLIENTE
+                      Protótipos finalizados de cada visão do sistema.<br/>
+                      Bot Mirella com API Oficial<br/>
+                      Primeira versão do Bot Imob com API Oficial<br/>
+                      Visualização estilo WhatsApp Web para bot Mirella e bot Imob
                     </p>
                   </div>
                 </div>
@@ -190,28 +195,24 @@ export function TaskSection() {
                     <div className="bg-[#00FF87]/20 text-[#00FF87] px-3 py-1 rounded-full text-sm font-medium">
                       Step 3
                     </div>
-                    <div className="text-gray-300">30 dias úteis</div>
+                    <div className="text-gray-300">20 dias úteis</div>
                   </div>
 
                   <div className="space-y-3 mb-6">
                     <div className="flex items-start gap-3">
                       <div className="flex-shrink-0 w-5 h-5 border border-gray-500 rounded mt-0.5"></div>
-                      <span className="text-gray-300">
-                        [API Oficial] Criação da interface do clone do WhatsApp
-                      </span>
+                      <span className="text-gray-300">Visão do administrador funcional</span>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="flex-shrink-0 w-5 h-5 border border-gray-500 rounded mt-0.5"></div>
-                      <span className="text-gray-300">
-                        Integração do bot com a API Oficial
-                      </span>
+                      <span className="text-gray-300">Visão do usuario DIGITAL funcional</span>
                     </div>
                   </div>
 
                   <div className="bg-[#222] p-4 rounded-lg">
                     <h4 className="text-white font-medium mb-2">O que esse Step entrega?</h4>
                     <p className="text-gray-300">
-                      Plataforma funcional com interface de chat para API Oficial
+                      Plataforma com a área administrador e do usuário digital funcional
                     </p>
                   </div>
                 </div>
@@ -222,28 +223,20 @@ export function TaskSection() {
                     <div className="bg-[#00FF87]/20 text-[#00FF87] px-3 py-1 rounded-full text-sm font-medium">
                       Step 4
                     </div>
-                    <div className="text-gray-300">10 dias úteis</div>
+                    <div className="text-gray-300">20 dias úteis</div>
                   </div>
 
                   <div className="space-y-3 mb-6">
                     <div className="flex items-start gap-3">
                       <div className="flex-shrink-0 w-5 h-5 border border-gray-500 rounded mt-0.5"></div>
-                      <span className="text-gray-300">Integração do Bring Bot com a plataforma</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-5 h-5 border border-gray-500 rounded mt-0.5"></div>
-                      <span className="text-gray-300">Integração do Bring Bot Briefing</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-5 h-5 border border-gray-500 rounded mt-0.5"></div>
-                      <span className="text-gray-300">Adição de recurso Webhooks na plataforma</span>
+                      <span className="text-gray-300">Visão do usuário IMOBILIARIA funcional</span>
                     </div>
                   </div>
 
                   <div className="bg-[#222] p-4 rounded-lg">
                     <h4 className="text-white font-medium mb-2">O que esse Step entrega?</h4>
                     <p className="text-gray-300">
-                      Funcionalidades Bring Bot, Bring Bot Briefing e Webhooks
+                      Plataforma com a área imobiliária funcional
                     </p>
                   </div>
                 </div>
@@ -292,22 +285,33 @@ export function TaskSection() {
           </div>
         </div>
       ) : (
-        <div className="grid gap-3 md:grid-cols-2">
-          {(activeTab === "upcoming" ? upcomingTasks : completedTasks).map((task) => (
-            <div
-              key={task.id}
-              className="bg-gray-900/50 backdrop-blur-sm p-4 rounded-lg transition-all hover:bg-gray-900/70"
-            >
-              <div className="flex justify-between items-start">
-                <h3 className="font-medium">{task.nome}</h3>
-                <span className={cn("text-xs px-2 py-1 rounded-full", getStatusColor(task.status))}>
-                  {task.status}
-                </span>
+        <div className="space-y-4">
+          <div className={activeTab === "upcoming" ? "space-y-3" : "grid gap-3 md:grid-cols-2"}>
+            {(activeTab === "upcoming" ? upcomingTasks : completedTasks).map((task) => (
+              <div
+                key={task.id}
+                className="bg-gray-900/50 backdrop-blur-sm p-4 rounded-lg transition-all hover:bg-gray-900/70"
+              >
+                <div className="flex justify-between items-start">
+                  <h3 className="font-medium">{task.nome}</h3>
+                  <span className={cn("text-xs px-2 py-1 rounded-full", getStatusColor(task.status))}>
+                    {task.status}
+                  </span>
+                </div>
+                {task.completedDate && <p className="text-xs text-gray-400 mt-2">Concluído em: {task.completedDate}</p>}
+                {task.previsao && <p className="text-xs text-gray-400 mt-2">Previsão: {task.previsao}</p>}
               </div>
-              {task.completedDate && <p className="text-xs text-gray-400 mt-2">Concluído em: {task.completedDate}</p>}
-              {task.previsao && <p className="text-xs text-gray-400 mt-2">Previsão: {task.previsao}</p>}
+            ))}
+          </div>
+          
+          {activeTab === "upcoming" && (
+            <div className="bg-[#00FF87]/10 p-6 rounded-lg border border-[#00FF87]/30">
+              <div className="flex items-center gap-2 mb-2">
+                <Clock className="h-5 w-5 text-[#00FF87]" />
+                <h3 className="text-lg font-medium text-white">Data prevista para fim do projeto: 29/09/2025</h3>
+              </div>
             </div>
-          ))}
+          )}
         </div>
       )}
     </div>

@@ -6,7 +6,7 @@ export function Footer() {
       <div className="flex items-center justify-center gap-8">
         <div className="relative h-10 w-32 opacity-80">
           <Image
-            src="https://erdeenterprise.com/wp-content/uploads/2023/10/Logo-3.png.webp"
+            src="https://erdeenterprise.com/wp-content/uploads/2025/05/Logo-c-Icone-Verde.svg"
             alt="Erde Logo"
             fill
             style={{ objectFit: "contain" }}

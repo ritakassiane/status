@@ -65,22 +65,30 @@ export const mockCompletedTasks = [
 export const mockUpcomingTasks = [
   {
     id: "5",
-    nome: "TESTE: Funil de Vendas, envio de devocional l, payments e follow up.",
+    nome: "UI/UX com protótipo do sistema web completo",
     status: "in progress",
-    created_at: "2024-03-24T00:00:00Z"
+    created_at: "2024-03-24T00:00:00Z",
+    previsao: "11/07/2025"
   },
   {
     id: "6",
-    nome: "[Plataforma] Visão da Cliente Mirela",
-    status: "to do",
+    nome: "Bot Mirella com API Oficial",
+    status: "in progress",
     created_at: "2024-03-25T00:00:00Z",
-    previsao: "06/06/2025"
+    previsao: "11/07/2025"
   },
   {
     id: "7",
-    nome: "[Plataforma] Plataforma funcional para VISÃO AGÊNCIA e VISÃO CLIENTE para API não Oficial",
-    status: "to do",
+    nome: "Bot Imob com API Oficial",
+    status: "in progress",
     created_at: "2024-03-26T00:00:00Z",
-    previsao: "01/07/2025"
+    previsao: "04/08/2025"
+  },
+  {
+    id: "8",
+    nome: "Visualização em chat do Bot Imob e Bot Mirella",
+    status: "in progress",
+    created_at: "2024-03-27T00:00:00Z",
+    previsao: "04/08/2025"
   }
 ]; 
